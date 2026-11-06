@@ -1,0 +1,109 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+  font-family: HK Grotesk, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f5f5f5f5;
+  color: #666666;
+  padding: 42px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav > a {
+  color: #666666;
+  text-decoration: none
+}
+.nav > a:hover {
+  color: #000000;
+}
+
+.logo {
+  width: 150px;
+}
+
+svg {
+color: #008ECC;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 42px;
+  align-items: center;
+}
+
+
+.container-icone {
+  width: 50px;
+  height: 50px;
+  background-color: #f4f9fc;
+  border-radius: 4px;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.icone-linhas {
+  position: relative;
+  width: 24px;              
+  height: 3px;              
+  background-color: #007bb6;
+  border-radius: 2px;
+}
+
+
+.icone-linhas::before,
+.icone-linhas::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;              
+  background-color: #007bb6;
+  border-radius: 2px;
+}
+
+
+.icone-linhas::before {
+  top: -8px;                
+  width: 28px;              
+}
+
+
+.icone-linhas::after {
+  bottom: -8px;              
+  width: 16px;              
+}
+
+.container > h1 {
+  color: #008ECC;
+}
+
+.container > input {
+  width: 507px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F3F9FB;
+  border-color: #F3F9FB;
+ 
+}
